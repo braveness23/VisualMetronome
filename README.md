@@ -1,5 +1,5 @@
 # VisualMetronome
-An Arduino based USB MIDI metronome that uses LED's to signal tempo
+An Arduino based USB MIDI metronome that uses LEDs to signal tempo
 
 Visual Metronome is a USB MIDI device which flashes bright RGB LEDs to visually indicate musical bars and beats very much like an audible metronome.  Note events from a MIDI Sequencer or DAW turn on the LEDs and the LEDs remain on for the duration of the note.  Different colors are assigned to note values and <TO DO> the brightness of the LEDs is determined by note velocity </TO DO>.  A MIDI sequence or track is created in the sequencer which "plays" the LEDs exactly as you would play any other externally attached MIDI device.  The composer would typically play an LED on beat 1, 2, 3 and 4 however the LEDs can be played to represent any other subdivision or even arbitrarily.
 
@@ -24,4 +24,4 @@ The Arduino Uno's ATMega16u2 microcontroller must be reprogrammed with the provi
 
 Arduino Sketch
 
-The Arduino Uno's ATmega328P microcontroller must also be programmed with the provided Arduino Sketch.  This is the software that tells the microcontroller how to flash the LED's upon receiving incoming MIDI notes.
+The Arduino Uno's ATmega328P microcontroller must also be programmed with the provided Arduino Sketch.  This is the software that tells the microcontroller how to flash the LEDs upon receiving incoming MIDI notes.
