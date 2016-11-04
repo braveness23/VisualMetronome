@@ -20,7 +20,7 @@ Visual Metronomes software consists of two components - the USB firmware and the
 
 USB Firmware
 
-The Arduino Uno's ATMega16u2 microcontroller must be reprogrammed with the provided firmware.  This firmware causes the device to become a class compliant HID (Human Interface Device).  This means that when the device is connected to a computer (Windows, OSX, Linux) with a USB cable it will be detected as a standard MIDI device and the operating system will automatically load the driver.  In your computers device manager and in your DAW or Sequencer the device will appear as 'Visual Metronome'.
+The Arduino Uno's ATMega16u2 microcontroller must be reprogrammed with the provided firmware.  This firmware causes the device to become a class compliant HID (Human Interface Device).  This means that when the device is connected to a computer (Windows, OSX, Linux) with a USB cable it will be detected as a standard MIDI device and the operating system will automatically load the driver.  In your computer's device manager and in your DAW or Sequencer the device will appear as 'Visual Metronome'.
 
 Arduino Sketch
 
