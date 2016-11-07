@@ -43,6 +43,11 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
       g = 255;
       b = 255;
       break;
+
+    case 63: //green
+      r = 119;
+      g = 244;
+      b = 66;
  
     default:
       break;   
