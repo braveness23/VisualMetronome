@@ -9,11 +9,6 @@ The design goal of Visual Metronome is to be simple and inexpensive to build.  I
 
 Visual Metronome's hardware consists of an Arduino Uno and an Adafruit Neopixel Ring.  The Neopixel ring is attached to the Uno as shown in the included diagram.  The following connections are required:
 
-Uno	Neopixel	Wire Color
-GND	GND		Black
-5V	PWR		Red
-6	In		White
-
 | Uno        | Neopixel           | Wire Color  |
 | ------------- |:-------------:| -----:|
 | GND      | GND | Black |
