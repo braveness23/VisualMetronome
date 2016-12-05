@@ -14,11 +14,11 @@ GND	GND		Black
 5V	PWR		Red
 6	In		White
 
-| Tables        | Are           | Cool  |
+| Uno        | Neopixel           | Wire Color  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| GND      | GND | Black |
+| 5v      | PWR      |   Red |
+| 6 | In      |    White |
 
 ![Circuit](Visual Metronome.fzz.png)
 
