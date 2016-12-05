@@ -5,6 +5,8 @@ Visual Metronome is a USB MIDI device which flashes bright RGB LEDs to visually 
 
 Visual Metronome is intended to replace or supplement an audible click style metronome.  In many cases an audible click is not suitable.  For example an audible metronome can cause "headphone bleed" into sensitive microphones.  Audible clicks may also not "feel" right in certain styles of music such as very slow or legato pieces.  Audible metronomes also require that musicians wear headphones sometimes in situations where they would rather not.  A very loud audible metronome can cause ear pain or hearing damage.
 
+## Hardware
+
 The design goal of Visual Metronome is to be simple and inexpensive to build.  It is also intended to be simple and "idiot proof" to use.
 
 Visual Metronome's hardware consists of an Arduino Uno and an Adafruit Neopixel Ring.  The Neopixel ring is attached to the Uno as shown in the included diagram.  The following connections are required:
