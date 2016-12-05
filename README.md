@@ -14,6 +14,12 @@ GND	GND		Black
 5V	PWR		Red
 6	In		White
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ![Circuit](Visual Metronome.fzz.png)
 
 Power is supplied to Visual Metronome by the computer via the USB cable.  The computer provided power is sufficient to run the Uno and the Neopixel ring.  If you wish to modify the project and use more than 12 Neopixels then you may need to also provide an additional power source.
