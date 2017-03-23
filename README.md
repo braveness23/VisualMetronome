@@ -17,7 +17,7 @@ Visual Metronome's hardware consists of an Arduino Uno and an Adafruit Neopixel 
 | 5v      | PWR      |   Red |
 | 6 | In      |    White |
 
-![Circuit](Visual Metronome.fzz.png)
+![Circuit](VisualMetronome.fzz.png)
 
 Power is supplied to Visual Metronome by the computer via the USB cable.  The computer provided power is sufficient to run the Uno and the Neopixel ring.  If you wish to modify the project and use more than 12 Neopixels then you may need to also provide an additional power source.
 
