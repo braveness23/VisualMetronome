@@ -30,3 +30,5 @@ The Arduino Uno's ATMega16u2 microcontroller must be reprogrammed with the provi
 ## Arduino Sketch
 
 The Arduino Uno's ATmega328P microcontroller must also be programmed with the provided Arduino Sketch.  This is the software that tells the microcontroller how to flash the LEDs upon receiving incoming MIDI notes.
+
+TODO: Provide instructions for how to flash firmware onto Arduino UNO
