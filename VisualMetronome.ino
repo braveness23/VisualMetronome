@@ -42,11 +42,26 @@ void handleNoteOn(byte channel, byte note, byte velocity)
     b = 255;
     break;
 
-  // D# - Green
+  // D# - Apple Green
   case 3:
-    r = 119;
-    g = 244;
-    b = 66;
+    r = 14;
+    g = 194;
+    b = 114;
+    break;
+    
+  // E - Canary Yellow
+  case 4:
+    r = 254;
+    g = 241;
+    b = 28;
+    break;
+    
+      // F - Pumpkin Orange
+  case 5:
+    r = 240;
+    g = 129;
+    b = 70;
+    break;
 
   default:
     break;
