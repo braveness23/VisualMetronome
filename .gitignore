@@ -6,3 +6,4 @@ firmware/*.lss
 firmware/*.map
 firmware/*.o
 firmware/*.sym
+.vscode/
