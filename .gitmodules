@@ -1,3 +1,6 @@
 [submodule "LUFA"]
 	path = LUFA
 	url = https://github.com/abcminiuser/lufa.git
+[submodule "HIDUINO"]
+	path = HIDUINO
+	url = https://github.com/ddiakopoulos/hiduino.git
