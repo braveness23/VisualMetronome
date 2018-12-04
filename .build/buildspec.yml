@@ -7,7 +7,7 @@ phases:
   install:
     commands:
       - CODEBUILD_WORKING_DIR=`pwd`
-      - sudo apt install -y binutils gcc-avr avr-libc uisp avrdude flex byacc bison
+      - sudo apt install -y binutils avr-gcc avr-libc uisp flex byacc bison
 
 #  pre_build:
 #    commands:
