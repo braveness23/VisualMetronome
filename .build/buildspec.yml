@@ -17,7 +17,6 @@ phases:
   build:
     commands:
       - cd firmware
-      - make config
       - make
 
 #  post_build:
