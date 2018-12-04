@@ -15,7 +15,7 @@ phases:
 
   build:
     commands:
-      - cd 
+      - cd firmware
       - make config
       - make
 
