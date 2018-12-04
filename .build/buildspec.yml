@@ -1,7 +1,7 @@
 version: 0.2
 
 env:
-  variables:
+#  variables:
 
 phases:
   install:
@@ -9,11 +9,11 @@ phases:
       - CODEBUILD_WORKING_DIR=`pwd`
       - sudo apt install -y binutils gcc-avr avr-libc uisp avrdude flex byacc bison
 
-  pre_build:
-    commands:
+  pre_build
+#    commands:
 
   build:
-    commands:
+#    commands:
 
   post_build:
-    commands:
+#    commands:
