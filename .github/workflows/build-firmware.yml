@@ -17,9 +17,9 @@ jobs:
 
       # Step 2: Set up the environment if needed (for example, if your makefile requires a specific toolchain or dependencies)
       # For example, if your firmware requires a specific toolchain, you can install it here
-      # - name: Set up Toolchain (optional)
-      #   run: |
-      #     sudo apt-get install <toolchain>
+      - name: Set up Toolchain (optional)
+        run: |
+          sudo apt-get install build-essential gcc-avr avr-libc
 
       # Step 3: Run the `make` command in the `firmware` directory
       - name: Build firmware
