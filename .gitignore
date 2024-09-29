@@ -7,3 +7,5 @@ firmware/*.map
 firmware/*.o
 firmware/*.sym
 .vscode/
+firmware/*.hex
+firmware/obj

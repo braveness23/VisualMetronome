@@ -1,6 +1,6 @@
 #
 #             LUFA Library
-#     Copyright (C) Dean Camera, 2014.
+#     Copyright (C) Dean Camera, 2017.
 #
 #  dean [at] fourwalledcubicle [dot] com
 #           www.lufa-lib.org
@@ -11,40 +11,33 @@
 
 # Run "make help" for target help.
 
-MCU          = atmega16u2
+MCU          = at90usb1287
 ARCH         = AVR8
-BOARD        = UNO
-F_CPU        = 16000000
+BOARD        = USBKEY
+F_CPU        = 8000000
 F_USB        = $(F_CPU)
 OPTIMIZATION = s
-TARGET       = arduino_midi
-SRC          = $(TARGET).c Descriptors.c $(LUFA_SRC_USB)
+TARGET       = MIDI
+SRC          = $(TARGET).c Descriptors.c $(LUFA_SRC_USB) $(LUFA_SRC_USBCLASS)
 LUFA_PATH    = ../LUFA/LUFA
 CC_FLAGS     = -DUSE_LUFA_CONFIG_HEADER -IConfig/
 LD_FLAGS     =
 
-# Specifically for the Arduino Due
-CC_FLAGS += -DAVR_RESET_LINE_PORT="PORTC"
-CC_FLAGS += -DAVR_RESET_LINE_DDR="DDRC"
-CC_FLAGS += -DAVR_RESET_LINE_MASK="(1 << 7)"
-CC_FLAGS += -DAVR_ERASE_LINE_PORT="PORTC"
-CC_FLAGS += -DAVR_ERASE_LINE_DDR="DDRC"
-CC_FLAGS += -DAVR_ERASE_LINE_MASK="(1 << 6)"
-
-# Optional Variables 
-AVRDUDE_PROGRAMMER = avrisp2
-ARDUINO_MODEL_PID = 0x0010
-
 # Default target
 all:
 
-# Include LUFA build script makefiles
-include $(LUFA_PATH)/Build/lufa_core.mk
-include $(LUFA_PATH)/Build/lufa_sources.mk
-include $(LUFA_PATH)/Build/lufa_build.mk
-include $(LUFA_PATH)/Build/lufa_cppcheck.mk
-include $(LUFA_PATH)/Build/lufa_doxygen.mk
-include $(LUFA_PATH)/Build/lufa_dfu.mk
-include $(LUFA_PATH)/Build/lufa_hid.mk
-include $(LUFA_PATH)/Build/lufa_avrdude.mk
-include $(LUFA_PATH)/Build/lufa_atprogram.mk
+# Include LUFA-specific DMBS extension modules
+DMBS_LUFA_PATH ?= $(LUFA_PATH)/Build/LUFA
+include $(DMBS_LUFA_PATH)/lufa-sources.mk
+include $(DMBS_LUFA_PATH)/lufa-gcc.mk
+
+# Include common DMBS build system modules
+DMBS_PATH      ?= $(LUFA_PATH)/Build/DMBS/DMBS
+include $(DMBS_PATH)/core.mk
+include $(DMBS_PATH)/cppcheck.mk
+include $(DMBS_PATH)/doxygen.mk
+include $(DMBS_PATH)/dfu.mk
+include $(DMBS_PATH)/gcc.mk
+include $(DMBS_PATH)/hid.mk
+include $(DMBS_PATH)/avrdude.mk
+include $(DMBS_PATH)/atprogram.mk

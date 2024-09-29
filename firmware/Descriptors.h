@@ -1,13 +1,13 @@
 /*
              LUFA Library
-     Copyright (C) Dean Camera, 2014.
+     Copyright (C) Dean Camera, 2017.
 
   dean [at] fourwalledcubicle [dot] com
            www.lufa-lib.org
 */
 
 /*
-  Copyright 2014  Dean Camera (dean [at] fourwalledcubicle [dot] com)
+  Copyright 2017  Dean Camera (dean [at] fourwalledcubicle [dot] com)
 
   Permission to use, copy, modify, distribute, and sell this
   software and its documentation for any purpose is hereby granted
@@ -43,10 +43,10 @@
 
 	/* Macros: */
 		/** Endpoint address of the MIDI streaming data IN endpoint, for device-to-host data transfers. */
-		#define MIDI_STREAM_IN_EPADDR       (ENDPOINT_DIR_IN  | 1)
+		#define MIDI_STREAM_IN_EPADDR       (ENDPOINT_DIR_IN  | 2)
 
 		/** Endpoint address of the MIDI streaming data OUT endpoint, for host-to-device data transfers. */
-		#define MIDI_STREAM_OUT_EPADDR      (ENDPOINT_DIR_OUT | 2)
+		#define MIDI_STREAM_OUT_EPADDR      (ENDPOINT_DIR_OUT | 1)
 
 		/** Endpoint size in bytes of the Audio isochronous streaming data IN and OUT endpoints. */
 		#define MIDI_STREAM_EPSIZE          64
@@ -84,7 +84,7 @@
 		enum InterfaceDescriptors_t
 		{
 			INTERFACE_ID_AudioControl = 0, /**< Audio control interface descriptor ID */
-			INTERFACE_ID_AudioStream  = 1, /**< Audio stream interface descriptor ID */
+			INTERFACE_ID_AudioStream  = 1, /**< Audio streaming interface descriptor ID */
 		};
 
 		/** Enum for the device string descriptor IDs within the device. Each string descriptor should
@@ -100,7 +100,7 @@
 
 	/* Function Prototypes: */
 		uint16_t CALLBACK_USB_GetDescriptor(const uint16_t wValue,
-		                                    const uint8_t wIndex,
+		                                    const uint16_t wIndex,
 		                                    const void** const DescriptorAddress)
 		                                    ATTR_WARN_UNUSED_RESULT ATTR_NON_NULL_PTR_ARG(3);
 
