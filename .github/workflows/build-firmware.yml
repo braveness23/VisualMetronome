@@ -4,7 +4,7 @@ name: Build Firmware
 on:
   push:
     branches:
-      - main # This specifies the branch to monitor for commits; you can change it to your target branch
+      - master # This specifies the branch to monitor for commits; you can change it to your target branch
 
 jobs:
   build-firmware:
