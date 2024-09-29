@@ -1,0 +1,27 @@
+name: Build Firmware
+
+# Trigger the workflow on every push to the repository
+on:
+  push:
+    branches:
+      - main # This specifies the branch to monitor for commits; you can change it to your target branch
+
+jobs:
+  build-firmware:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up the environment if needed (for example, if your makefile requires a specific toolchain or dependencies)
+      # For example, if your firmware requires a specific toolchain, you can install it here
+      # - name: Set up Toolchain (optional)
+      #   run: |
+      #     sudo apt-get install <toolchain>
+
+      # Step 3: Run the `make` command in the `firmware` directory
+      - name: Build firmware
+        working-directory: firmware
+        run: make
