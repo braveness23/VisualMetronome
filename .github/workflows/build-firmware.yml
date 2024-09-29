@@ -27,4 +27,6 @@ jobs:
       # Step 3: Run the `make` command in the `firmware` directory
       - name: Build firmware
         working-directory: firmware
-        run: make
+        run: |
+          cd firmware
+          make
