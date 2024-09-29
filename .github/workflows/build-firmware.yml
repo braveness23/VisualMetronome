@@ -4,16 +4,19 @@ name: Build Firmware
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-firmware:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
-      - name: Checkout repository
+      # Step 1: Check out the repository, including submodules
+      - name: Checkout repository with submodules
         uses: actions/checkout@v3
+        with:
+          submodules: true # Clones submodules as well
+          fetch-depth: 0   # Ensures the full history is fetched (optional, useful if using deep cloning)
 
       # Step 2: Set up the environment if needed (for example, if your makefile requires a specific toolchain or dependencies)
       # For example, if your firmware requires a specific toolchain, you can install it here
