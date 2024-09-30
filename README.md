@@ -11,7 +11,7 @@ The design goal of Visual Metronome is to be simple and inexpensive to build.  I
 
 Visual Metronome's hardware consists of an Arduino Uno and an Adafruit NeoPixel Shield for Arduino - 40 RGB LED Pixel Matrix.  Simply pop the NeoPixel Matrix Shield onto the Arduino and you're done!  Other variations of Adafruit NeoPixel shields exist today.  Your connection requirements may be somewhat different based on which one you choose.
 
-![Circuit](VisualMetronome_with_Adafruit_NeoPixel_Shield.fzz.png)
+![Circuit](resources/VisualMetronome_with_Adafruit_NeoPixel_Shield.fzz.png)
 
 Power is supplied to Visual Metronome by the computer via the USB cable.  The computer provided power is sufficient to run the Uno and the Adafruit NeoPixel Shield for Arduino - 40 RGB LED Pixel Matrix.  Other variations of Adafruit NeoPixel shields exist today.  Your power  requirements may be somewhat different based on which one you choose.
 
