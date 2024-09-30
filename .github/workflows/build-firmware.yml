@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'firmware/**' # Only trigger the workflow if there are changes in the firmware directory
+      - '.github/workflows/build-firmware.yml' # Trigger if the workflow file itself is changed
 
 jobs:
   build-firmware:
