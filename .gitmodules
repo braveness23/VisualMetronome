@@ -1,4 +1,4 @@
 [submodule "LUFA"]
 	path = LUFA
-	url = https://github.com/abcminiuser/lufa.git
+	url = https://github.com/braveness23/lufa.git
 
